@@ -24,7 +24,7 @@ async function initApp() {
         const accounts = await window.ethereum.request({
           method : "eth_requestAccounts"
         })
-      
+      console.log("wallet account", accounts);
     } catch (error) {
         console.error("Eth browser not detected");
     }

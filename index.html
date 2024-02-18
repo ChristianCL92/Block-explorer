@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js" 
+    integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./app.js" defer></script>
+</head>
+<body>
+    <header class="top">
+        <h1>Block Explorer</h1>
+    </header>
+ <div class="all-components">
+    <div class="component first">   
+        <input type="text" id="accountStart" placeholder="Insert public address">
+        <button id="checkBalance">Check Balance</button>
+    </div>
+    <div>Eth Balance</div>
+    <div id="balanceDisplayed"></div>
+     <div class="component second">
+        <input type="text" id="amountSend" placeholder="Enter amount to send">
+    </div>
+    <div class="component third">
+        <input type="text" id="accountReceive" placeholder="To public Account">
+        <button id="sendCrypto">Send</button>
+    </div> 
+    <div>
+        <button id="allBlocksButton">Total blocks</button>
+        <div>Current chain blocks:
+            <span id="checkAllBlocks" class="checkAllBlocks"></span>
+        </div>
+        
+    </div>
+    <div class="transactions-box">
+        <div><span>Från</span><span>Till</span><span>Summa Ether</span></div>
+        <div id="transactions"></div>
+    </div>
+</div>
+</body>
+</html>

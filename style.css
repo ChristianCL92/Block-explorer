@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Protest Revolution', sans-serif;
+    font-size: 1.2rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: aquamarine;
+    margin-bottom: 3rem;
+}
+
+.top h1 {
+    color: rgb(28, 20, 20);
+}
+
+.all-components {
+    margin: 0 2.5rem;
+}
+
+.second{
+    margin-bottom: 1.2rem;
+}
+
+input {
+    width: 25%;
+    height: 2rem;
+}
+
+button {
+    width: 6.2rem;
+    height: 2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight:bold;
+    
+}
+
+.transactions-box > div {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div .checkAllBlocks {
+    background-color: aquamarine;
+}
+
+
+
+

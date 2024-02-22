@@ -1,4 +1,5 @@
 import { validateAccountNotEmpty } from "./utilities/testBalance.js";
+import BalanceChecker from "./BalanceCheck.js";
 
 const accountInput = document.querySelector("#accountStart");
 const checkBalanceButton = document.querySelector("#checkBalance");
@@ -16,7 +17,8 @@ const currentChainBlocks = document.querySelector("#checkAllBlocks");
   //const rpc = new Web3('HTTP://127.0.0.1:7545');
   const rpc = new Web3(window.ethereum); 
 
-let account;
+  const balanceChecker = new BalanceChecker(rpc)
+  let account;
 
 async function initApp() {
   console.log(rpc);
@@ -37,8 +39,9 @@ async function initApp() {
 async function checkBalance() {
   account = accountInput.value;
   validateAccountNotEmpty(account)
-  const balance = await rpc.eth.getBalance(account);
-  currentBalance.innerHTML = rpc.utils.fromWei(balance, 'ether');
+
+  const balance = await balanceChecker.getAccountBalance(account);
+  currentBalance.innerHTML = balance
   accountInput.value = "";
   
 }

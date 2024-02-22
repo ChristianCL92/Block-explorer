@@ -1,3 +1,5 @@
+import { validateAccountNotEmpty } from "./utilities/testBalance.js";
+
 const accountInput = document.querySelector("#accountStart");
 const checkBalanceButton = document.querySelector("#checkBalance");
 const currentBalance = document.querySelector("#balanceDisplayed");
@@ -34,6 +36,7 @@ async function initApp() {
 
 async function checkBalance() {
   account = accountInput.value;
+  validateAccountNotEmpty(account)
   const balance = await rpc.eth.getBalance(account);
   currentBalance.innerHTML = rpc.utils.fromWei(balance, 'ether');
   accountInput.value = "";

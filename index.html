@@ -19,30 +19,36 @@
         <h1>Block Explorer</h1>
     </header>
  <div class="all-components">
-    <div class="component first">   
-        <input type="text" id="accountStart" placeholder="Insert public address">
-        <button id="checkBalance">Check Balance</button>
+    <div class="sender-section">   
+        <input type="text" id="accountStart" class="inputSender" placeholder="Insert public address">
     </div>
-    <div>Eth Balance</div>
-    <div id="balanceDisplayed"></div>
-     <div class="component second">
-        <input type="text" id="amountSend" placeholder="Enter amount to send">
+    <div class="checkBalanceBtn-section">
+        <button id="checkBalance" class="balanceBtn">Check Balance</button>
     </div>
-    <div class="component third">
-        <input type="text" id="accountReceive" placeholder="To public Account">
-        <button id="sendCrypto">Send</button>
+    <div class="ethInformation-section">
+        <p>Eth Balance:</p>
+        <p id="balanceDisplayed"></p>
+    </div>
+     <div class="amountToSend-section">
+        <input type="text" id="amountSend" class="amountToSend" placeholder="Enter amount to send">
+    </div>
+    <div class="receiver-section">
+        <input type="text" id="accountReceive" class="inputReceiver" placeholder="To public Account">
     </div> 
-    <div>
-        <button id="allBlocksButton">Total blocks</button>
-        <div>Current chain blocks:
-            <span id="checkAllBlocks" class="checkAllBlocks"></span>
-        </div>
-        
+    <div class="sendBtn-section">
+        <button id="sendCrypto" class="sendBtn">Send</button>
     </div>
+        <div class="allBlocks-section">
+        <button id="allBlocksButton">Total blocks</button>
+        <div class="chainBlocks">Current chain blocks:
+            <span id="checkAllBlocks" class="checkAllBlocks"></span>
+          </div>
+        </div>
+</div>
     <div class="transactions-box">
         <div><span>From</span><span>To</span><span>Ether</span></div>
         <div id="transactions"></div>
     </div>
-</div>
+    
 </body>
 </html>

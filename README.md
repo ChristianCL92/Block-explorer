@@ -1,2 +1,5 @@
-# This project showcases a web application built with vanilla JavaScript, HTML, and CSS. 
-# It is designed to demonstrate functionalities such as balance checking among others, providing a hands-on experience with core web development technologies.
+ This project showcases a frontend application built with vanilla JavaScript, HTML, and CSS. The application consumes an Ethereum testnet blockchain, Sepolia.
+
+ Make sure to have metamask wallet installed for the application to work and switch to sepolia testnet.
+
+

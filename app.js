@@ -21,14 +21,12 @@ const currentChainBlocks = document.querySelector("#checkAllBlocks");
   let account;
 
 async function initApp() {
-  console.log(rpc);
 
   if(window.ethereum){
     try {
         const accounts = await window.ethereum.request({
           method : "eth_requestAccounts"
         })
-      console.log("wallet account", accounts);
     } catch (error) {
         console.error("Eth browser not detected");
     }
@@ -60,7 +58,6 @@ try {
     gas: 30000
    });
 
-   console.log("transaktionen:",transaction);
    displayTransactionDetails(transaction.transactionHash)
 
 }   catch (error) {

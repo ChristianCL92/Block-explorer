@@ -114,32 +114,6 @@ button {
     margin-left: 0.5rem;
 }
 
-
-
-/* .all-components {
-    margin: 0 2.5rem;
-}
-
-.second{
-    margin-bottom: 1.2rem;
-}
-
-input {
-    width: 25%;
-    height: 2rem;
-}
-
-button {
-    width: 6.2rem;
-    height: 2rem;
-    cursor: pointer;
-    white-space: nowrap;
-    font-weight:bold;
-    background-color: aquamarine;
-    box-shadow: 0.05rem 0.05rem  gray;
-    
-} */
-
 .transactions-box > div {
     margin: 3rem 1.8rem;
     display: flex;
